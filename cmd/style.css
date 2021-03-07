@@ -191,3 +191,11 @@ button
   font-size: 40px;
   font-weight: bold;
 }
+
+.hide {
+  display: none;
+}
+
+.mental:hover + .hide {
+  display: block;;
+}
