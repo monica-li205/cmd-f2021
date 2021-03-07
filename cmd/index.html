@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Challenges</title>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Gender', 'Percentage of depressions', 'Percentage of depressions', 'Percentage of depressions'],
+          ['Women', 15, 10, 6],
+          ['Men', 10, 6, 5],
+          
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Percentage of depression between men and women',
+            subtitle: 'By the End of 2017',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+</head>
+<body>
+    <h1>Challenges women face in male dominated society</h1>
+  
+    <h2>Problems related to depression</h2>
+<div class="square">
+    <div id="barchart_material" style="width: 600px; height: 300px;"></div>
+</div>
+<h2>Why women are depressed</h2>
+<div class="square">
+  
+    <p> As a consequence, women are also underrepresented in STEM‐related industrial or academic leading positions and boards. In addition to the tendency to leave research earlier than similarly qualified men, women in science are still paid less, promoted less, and win fewer grants. According to a 2006 study, the gender pay gap is even worse for some scientists in Europe than it is in the USA. In 2008, the European Commission found that women's hourly earnings were an average 17,5 % lower than men's when all industries were considered. Female scientists are also more likely to be assigned to jobs for which there is less recognition. For example, a 2010 UK survey showed that women spent more hours per week teaching and fewer hours conducting research than male academics, putting them at a disadvantage for promotion. It is surprising then that women do not complain more about the bias or discrimination they experience. Reasons could be that they are less aware of it or do not want to appear to complain because of a fear of jeopardizing their career.</p>
+    
+</div>
+<a href="mental.html"><button class="button">Next</button></a>
+</body>
+
+</html>
